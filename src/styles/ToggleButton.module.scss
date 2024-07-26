@@ -1,0 +1,43 @@
+/* src/styles/ToggleButton.module.css */
+
+.togglecontainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.toggleButton {
+  width: 100px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  position: relative;
+}
+
+.togglecircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.present .togglecircle {
+  background-color: blue;
+  transform: translateX(60px);
+}
+
+.absent .togglecircle {
+  background-color: red;
+  transform: translateX(0);
+}
+
+.toggletext {
+  font-size: 16px;
+}
